@@ -52,11 +52,11 @@ const App = () => {
             <Route path="/chat/:chatId" element={<Chat />} />
             <Route path="/groups" element={<Groups />} />
           </Route>
-
+            
           <Route
             path="/login"
             element={
-              <ProtectRoute user={!user} redirect="/">
+              <ProtectRoute user={!user} redirect="/chat/67d1442a7b2fab97b0f010f2">
                 <Login />
               </ProtectRoute>
             }
